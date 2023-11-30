@@ -4,9 +4,9 @@ from PIL import Image
 import pickle
 import streamlit as st
 import sklearn
-my_model = pickle.load(open("C:\\Users\\Amarachi Uzochukwu\\Desktop\\RFR_model.pkl", 'rb'))
+my_model = pickle.load(open("RFR_model.pkl", 'rb'))
 st.title('Ola Bike Delivery Prediction')
-img = Image.open("C:\\Users\\Amarachi Uzochukwu\\Downloads\\pexels-norma-mortenson-4391470.jpg")
+img = Image.open("pexels-norma-mortenson-4391470.jpg")
 st.image(img, width=350)
 
 def user_report():
